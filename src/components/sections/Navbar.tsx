@@ -88,9 +88,9 @@ const Navbar = () => {
           <Image
             src="/GKlogo.png"
             alt="GK Logo"
-            width={100}
-            height={95}
-            className="w-full h-auto"
+            width={150}
+            height={75}
+            className="w-2/3 h-auto"
           />
         </Link>
         <div className="lg:flex hidden gap-10">
