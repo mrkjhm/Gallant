@@ -88,7 +88,7 @@ const Navbar = () => {
           <Image
             src="/GKlogo.png"
             alt="GK Logo"
-            width={125}
+            width={100}
             height={95}
             className="w-full h-auto"
           />
@@ -130,18 +130,16 @@ const Navbar = () => {
 
         <div className="fixed z-60 flex-1">
           <div
-            className={`fixed inset-0 bg-black/50  transition-opacity duration-500 ${
-              menuOpen
-                ? "opacity-100 pointer-events-auto"
-                : "opacity-0 pointer-events-none"
-            }`}
+            className={`fixed inset-0 bg-black/50  transition-opacity duration-500 ${menuOpen
+              ? "opacity-100 pointer-events-auto"
+              : "opacity-0 pointer-events-none"
+              }`}
           ></div>
           <aside
-            className={`h-screen bg-white fixed top-0 z-50 right-0 w-1/2 shadow-lg transition-all duration-500 ease-in-out ${
-              menuOpen
-                ? "translate-x-0 opacity-100 pointer-events-auto"
-                : "translate-x-full opacity-100 pointer-events-none"
-            }`}
+            className={`h-screen bg-white fixed top-0 z-50 right-0 w-1/2 shadow-lg transition-all duration-500 ease-in-out ${menuOpen
+              ? "translate-x-0 opacity-100 pointer-events-auto"
+              : "translate-x-full opacity-100 pointer-events-none"
+              }`}
           >
             <button
               onClick={toggleMenu}
@@ -162,11 +160,10 @@ const Navbar = () => {
                         href={item.href}
                         onClick={toggleMenu}
                         className={`px-3 py-2 rounded-lg transition-colors
-        ${
-          active
-            ? "bg-[#FF0100] text-white font-semibold"
-            : "text-gray-700 hover:text-black"
-        }`}
+        ${active
+                            ? "bg-[#FF0100] text-white font-semibold"
+                            : "text-gray-700 hover:text-black"
+                          }`}
                       >
                         {item.name}
                       </Link>
