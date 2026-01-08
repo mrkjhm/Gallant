@@ -53,7 +53,7 @@ const LandingPage = () => {
           >
             Welcome to Gallant Knight Group
           </motion.p>
-          <h1 className="flex flex-wrap w-2/3 text-[clamp(2rem,4vw,6rem)] text-white font-bold leading-none justify-center">
+          <h1 className="flex flex-wrap w-2/3 text-[clamp(3.5rem,5vw,6rem)]  text-[#e3bd6a] font-bold leading-none justify-center ">
             {words.map((word, i) => (
               <motion.div
                 key={i}

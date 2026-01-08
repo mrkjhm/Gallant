@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "remixicon/fonts/remixicon.css";
 import { Toaster } from "sonner";
+import Footer from "../components/sections/Footer";
 import Navbar from "../components/sections/Navbar";
+import ScrollToTop from "../components/Ui/ScrollToTop";
 import LenisProvider from "../Providers/LenisProvider";
 import "./globals.css";
-import Footer from "../components/sections/Footer";
 
 
 const geistSans = Geist({
@@ -38,6 +39,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
+          <ScrollToTop />
           <Toaster />
         </LenisProvider>
       </body>

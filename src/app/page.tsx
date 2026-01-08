@@ -14,8 +14,8 @@ export default function Home() {
       {/* <AboutSection /> */}
       {/* <ServiceSection /> */}
       <ServicesPreview />
-      <CTASection />
       <TeamSection />
+      <CTASection />
 
     </main>
   );

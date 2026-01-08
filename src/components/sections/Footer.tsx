@@ -1,15 +1,11 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
-import { MdOutlineArrowOutward } from "react-icons/md";
-import { MdArrowDownward } from "react-icons/md";
+import Link from "next/link";
 
-import Container from "../Ui/Container";
 import { NavLinks } from "../constant/NavLinks";
 import ArrowButton from "../Ui/ArrowButton";
-import { Services } from "../constant/Services";
-import Icon from "../Ui/Icon";
+import Container from "../Ui/Container";
 
 const Footer = () => {
   return (
@@ -39,7 +35,7 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col md:ml-20 ml-0">
-            <h3 className="font-semibold uppercase md:mb-6 mb-2">Menu</h3>
+            <h3 className="font-semibold uppercase md:mb-6 mb-2 text-[#e3bd6a]">Menu</h3>
             <div className="flex flex-col md:gap-3 gap-1 w-fit">
               {NavLinks.map((item, index) => (
                 <Link key={index} href={item.href} className="hover:underline">
@@ -50,7 +46,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="font-semibold uppercase md:mb-6 mb-2">Contact Us</h3>
+            <h3 className="font-semibold uppercase md:mb-6 mb-2 text-[#cfa853]">Contact Us</h3>
             <div className="space-y-3">
               <div className="space-y-1">
                 <h4 className="font-bold">Address</h4>
@@ -74,7 +70,7 @@ const Footer = () => {
           </div>
         </Container>
       </div>
-      <p className="text-center py-3">
+      <p className="text-center md:text-base text-sm py-3">
         Copyright © 2025 by Gallant Knight Manufacturing Corp.
       </p>
     </section>

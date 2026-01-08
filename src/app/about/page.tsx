@@ -38,7 +38,7 @@ const Journey = () => {
             initial={{ opacity: 0, x: -100 }}
             animate={leftControls1}
             transition={{ duration: 0.6 }}
-            className="w-1/2 space-y-5"
+            className="md:w-1/2 w-full space-y-5"
           >
             <p className="text-[#ff0100]">Our Journey</p>
             <h3 className="text-3xl md:text-4xl font-serif font-bold">
@@ -247,20 +247,20 @@ const About = () => {
 
   return (
     <section className="">
-      <div className="flex flex-col items-center justify-center  text-white space-y-2 bg-[url('/images/serviceimg1.png')] bg-center py-30">
+      <div className="flex flex-col items-center justify-center  text-white space-y-2 bg-[url('/images/serviceimg1.png')] bg-cover bg-center bg-no-repeat py-30 h-96">
         <Container>
           <motion.div
             ref={headerRef}
             initial={{ opacity: 0, y: 30 }}
             animate={headerControls}
             transition={{ duration: 0.6 }}
-            className="flex flex-col items-center justify-center space-y-2"
+            className="flex flex-col items-center justify-center space-y-2 text-center"
           >
-            <p>About Us</p>
-            <h1 className="text-5xl  font-bold  leading-none text-[#FF0100] ">
+            <p className="text-lg">About Us</p>
+            <h2 className="text-[clamp(2.5rem,4vw,4rem)]  font-bold  leading-none text-[#FF0100] font-serif">
               Our Story & Mission
-            </h1>
-            <p>
+            </h2>
+            <p className="text-center md:text-lg text-sm max-w-2xl mx-auto">
               Building lasting partnerships through excellence, integrity, and
               innovation for over two decades.
             </p>

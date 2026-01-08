@@ -26,11 +26,11 @@ const ArrowButton = ({
       onClick={onClick}
       className="group flex items-center space-x-2 cursor-pointer border px-5 py-2 rounded-full  hover:border-[#cfa853] transition-all duration-300"
     >
-      <span className="mr-2] group-hover:text-[#ff0100] transition-all duration-300">
+      <span className="mr-2] group-hover:text-[#cfa853] transition-all duration-300">
         {label}
       </span>
       <i
-        className={`${directionClasses[direction]} ${className} transition-all duration-300 group-hover:text-[#ff0100]`}
+        className={`${directionClasses[direction]} ${className} transition-all duration-300 group-hover:text-[#cfa853]`}
       />
     </button>
   );

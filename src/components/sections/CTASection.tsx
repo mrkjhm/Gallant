@@ -1,9 +1,9 @@
 "use client";
 
-import Link from "next/link";
-import ArrowButton from "../Ui/ArrowButton";
-import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
+import Link from "next/link";
+import { useEffect, useRef } from "react";
+import ArrowButton from "../Ui/ArrowButton";
 
 const CTASection = () => {
   const titleRef = useRef(null);
@@ -17,7 +17,7 @@ const CTASection = () => {
   }, [titleInView, titleControls]);
 
   return (
-    <section className="hero-gradient section-padding py-30">
+    <section className=" bg-[#f8f6f1] section-padding py-30">
       <motion.div
         ref={titleRef}
         initial={{ opacity: 0, y: 30 }}

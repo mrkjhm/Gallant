@@ -265,20 +265,20 @@ const Contact = () => {
   }, [headerInView, headerControls]);
   return (
     <>
-      <div className="flex flex-col items-center justify-center text-white bg-[url('/images/serviceimg1.png')] bg-center py-30">
+      <div className="flex flex-col items-center justify-center text-white bg-[url('/images/serviceimg1.png')] bg-cover bg-center bg-no-repeat py-30 h-96">
         <Container>
           <motion.div
             ref={headerRef}
             initial={{ opacity: 0, y: 30 }}
             animate={headerControls}
             transition={{ duration: 0.6 }}
-            className="flex flex-col items-center justify-center space-y-2"
+            className="flex flex-col items-center justify-center space-y-2 text-center"
           >
-            <p>Contact Us</p>
-            <h1 className="text-5xl  font-bold  leading-none text-[#FF0100] ">
+            <p className="text-lg">Contact Us</p>
+            <h2 className="text-[clamp(2.5rem,4vw,4rem)]  font-bold  leading-none text-[#FF0100] font-serif">
               Let's Start a Conversation
-            </h1>
-            <p>
+            </h2>
+            <p className="text-center md:text-lg text-sm  max-w-2xl mx-auto">
               Have a question or want to discuss a project? We'd love to hear
               from you.
             </p>
